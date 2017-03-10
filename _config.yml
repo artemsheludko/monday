@@ -6,7 +6,7 @@ description: > # this means to ignore newlines until "baseurl:"
 baseurl: "/monday" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 permalink: ':title/'
-blog_theme: light # Or use dark
+blog_theme: dark # Or use dark
 
 # Profile information
 name: Wendell Thomas
