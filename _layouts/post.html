@@ -1,0 +1,24 @@
+---
+layout: default
+---
+<div class="page-header">
+  <h1 class="page-title">{{page.title}}</h1>
+  <span class="page-list-date">
+    <i class="fa fa-calendar-o" aria-hidden="true"></i> {{ page.date | date: "%B %-d, %Y" }}
+  </span>
+</div>
+<div class="post-container">
+  {% if page.img %}
+   <img class="post-img" src={{ "/assets/img/" | prepend: site.baseurl | append : page.img}} alt="{{page.title}}">
+  {% endif %}
+  <div class="post-content">
+    <article>
+      {% if page.author %}
+      <div class="date-byline"><span><i class="fa fa-calendar-o" aria-hidden="true"></i> {{page.date | date: '%Y, %b %d'}}&nbsp;&nbsp;&nbsp;&nbsp;</span><span><i class="fa fa-pencil-square-o" aria-hidden="true"></i> {{page.author}}</span></div>
+      {% endif %}
+      {{page.content | markdownify}}
+    </article>
+    {% include share.html %}
+    {% include disqus.html %}
+  </div>
+</div>

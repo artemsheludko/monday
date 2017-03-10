@@ -1,0 +1,13 @@
+<div class="post-share">
+  <h5>Share:</h5>
+  {% assign page_title = page.title  | truncate '110' %}
+  <a href="" title="Share on Twitter" onclick="window.open('https://twitter.com/home?status={{ page_title }} - {{ page.url | absolute_url }} {% if site.twitter %}by {{ site.twitter }}{% endif %}', 'newwindow', 'width=500, height=225'); return false;" data-turbolinks="false">
+    <i class="fa fa-twitter" aria-hidden="true"></i>
+  </a>
+  <a href="" title="Share on Facebook" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u={{ page.url | absolute_url }}', 'newwindow', 'width=500, height=500'); return false;" data-turbolinks="false">
+    <i class="fa fa-facebook" aria-hidden="true"></i>
+  </a>
+  <a href="" title="Share on Google+" onclick="window.open('https://plus.google.com/share?url={{ page.url | absolute_url }}', 'newwindow', 'width=550, height=400'); return false;" data-turbolinks="false">
+    <i class="fa fa-google-plus" aria-hidden="true"></i>
+  </a>
+</div>

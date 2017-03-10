@@ -1,0 +1,22 @@
+@media screen and (min-width: 500px) {
+    html {
+        font-size:calc(15px + 7 * ((100vw - 500px) / 900));
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    html {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 480px) {
+    .page-heading .page-title {
+        font-size: 3.5rem;
+        line-height: 1.2;
+    }
+
+    .contact-list li a {
+      font-size: 0.7rem;
+    }
+}

@@ -1,0 +1,59 @@
+// Settings
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background: $body-background;
+  color: $base-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  line-height: 1.5;
+  text-rendering: optimizeLegibility;
+}
+
+a {
+  color: $color-link;
+  text-decoration: none;
+  transition: all .3s;
+
+  &:hover {
+    color: rgba(111, 111, 111, 0.7);
+  }
+}
+
+blockquote {
+  border-left: 5px solid $blockquote-border;
+  font-style: italic;
+  padding-left: 1.1rem;
+  margin-left: 1.2rem;
+  color: $gray-300;
+}
+
+.clearfix::before, .clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.divider::after {
+  content: "-";
+  display: inline-block;
+  position: relative;
+}

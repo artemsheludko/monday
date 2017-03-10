@@ -1,0 +1,59 @@
+---
+layout: default
+---
+
+<div class="home">
+  <div class="page-heading">
+    <h2 class="page-title">About me</h2>
+  </div>
+  <div class="about">
+    <div class="container-face">
+      <img class="face" src="{{site.baseurl}}/assets/img/{% if site.pic %}{{ site.pic }}{% else %}github.jpg{% endif %}" alt="">
+    </div>
+    <h2 class="tagline">{% if site.tagline %}{{site.tagline}}{% else %}Full Stack Developer{% endif %}</h2>
+    <div class="about-description">
+      <p>{% if site.about-description %}{{site.about-description}}{% else %}Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure culpa velit, obcaecati veniam quas, sed labore quo illo ipsam officiis, cum debitis aliquid dolorum autem quam. Officia voluptate, cupiditate illum?{% endif %}</p>
+    </div>
+    <div class="contact-contaiver">
+      <ul class="contact-list">
+
+        {% if site.email %}
+          <li class="email"><a href="mailto:{{site.email}}"><i class="fa fa-envelope-o"></i> {{site.email}}</a></li>
+        {% else %}
+          <li class="email"><a href="mailto:sheludkoartem@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i> sheludkoartem@gmail.com</a></li>
+        {% endif %}
+
+        {% if site.phone %}
+          <li class="phone"><a href="tel:{{site.phone}}"><i class="fa fa-phone"></i> {{site.phone}}</a></li>
+        {% else %}
+          <li class="phone"><a href="tel:044 825 5523"><i class="fa fa-phone" aria-hidden="true"></i> 044 825 5523</a></li>
+        {% endif %}
+
+        {% if site.website %}
+          <li class="website"><a href="http://{{site.website}}" target="_blank"><i class="fa fa-globe"></i> {{site.website}}</a></li>
+        {% else %}
+        <li class="website"><a href="http://artemsheludko.pw" target="_blank"><i class="fa fa-globe" aria-hidden="true"></i> artemsheludko.pw</a></li>
+        {% endif %}
+
+        {% if site.linkedin %}
+          <li class="linkedin"><a href="https://in.linkedin.com/in/{{site.linkedin}}" target="_blank"><i class="fa fa-linkedin"></i> linkedin.com/in/{{site.linkedin}}</a></li>
+        {% else %}
+        <li class="linkedin"><a href="https://in.linkedin.com/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i> linkedin.com</a></li>
+        {% endif %}
+
+        {% if site.github %}
+          <li class="github"><a href="http://github.com/{{site.github}}" target="_blank"><i class="fa fa-github"></i> github.com/{{site.github}}</a></li>
+        {% else %}
+          <li class="github"><a href="http://github.com/artemsheludko" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> github.com/artemsheludko</a></li>
+        {% endif %}
+
+        {% if site.twitter %}
+          <li class="twitter"><a href="https://twitter.com/{{site.twitter}}" target="_blank"><i class="fa fa-twitter"></i> {{site.twitter}}</a></li>
+        {% else %}
+          <li class="twitter"><a href="https://twitter.com/artemsheludko_" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i> @artemsheludko_</a></li>
+        {% endif %}
+
+      </ul>
+    </div>
+  </div>
+</div>

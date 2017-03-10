@@ -1,0 +1,39 @@
+---
+title: Blog
+layout: default
+permalink: /blog/
+---
+
+<div class="page-heading">
+  <h2 class="page-title">Blog <a class="rss-subscribe" href="{{ "/feed.xml" | relative_url }}"><i class="fa fa-rss" aria-hidden="true"></i></a></h2>
+</div>
+
+<div class="post-box">
+
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li class="post-item">
+
+        <h2 class="post-header">
+          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }} <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+        </h2>
+        <p class="post-description">{{ post.description }}</p>
+        <div class="article-list-footer">
+          <span class="article-list-date divider">
+            {{ post.date | date: "%B %-d, %Y" }}
+          </span>
+          <span class="article-list-minutes">
+            {% capture words %}
+              {{ post.content | number_of_words }}
+            {% endcapture %}
+            {% unless words contains "-" %}
+              {{ words | plus: 250 | divided_by: 250 | append: " minute read" }}
+            {% endunless %}
+          </span>
+        </div>
+
+      </li>
+    {% endfor %}
+  </ul>
+
+</div>

@@ -1,0 +1,68 @@
+// Dark Theme
+
+
+// Variables
+$dark: #181818;
+$gray-500: #272727;
+$gray-400: #323232;
+$gray-300: #6F6F6F;
+$gray-200: #c7c7c7;
+$gray-100: #f3f3f3;
+$white: #ffffff;
+$yellow: #F0F564;
+
+
+// Font
+$base-font-size: 15px;
+$base-line-height: 1.5;
+$base-font-weight: 400;
+$base-font-weight-bold: 700;
+
+
+// Page colors
+$body-background: $dark;
+$section-about-background: $gray-500;
+$contact-list-color: $white;
+$base-color: $white;
+$menu-color-link: $white;
+$menu-background-link-hover: $yellow;
+$menu-color-link-hover: $dark;
+$color-link: $gray-300;
+$page-title-color: $white;
+$about-tagline-color: $gray-300;
+$about-tagline-border: $gray-400;
+$border-color: $yellow;
+
+
+// Blog colors
+$post-box-background: $gray-500;
+$post-link-color: $white;
+$rss-subscribe-color: $gray-300;
+$rss-subscribe-hover: $yellow;
+$article-list-color: $white;
+$post-item-border: $gray-400;
+
+// Post colors
+$post-container-background: $gray-500;
+$article-border: $gray-400;
+
+// Base
+$blockquote-border: $yellow;
+
+// Syntax
+$highlight-background: $dark;
+
+
+// Tools
+@import "tools/normalize";
+
+// Settings
+
+@import "base/base";
+@import "base/syntax";
+@import "modules/header";
+@import "modules/home";
+@import "modules/blog";
+@import "modules/post";
+@import "modules/footer";
+@import "modules/media";

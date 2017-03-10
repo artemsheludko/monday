@@ -1,0 +1,53 @@
+.page-header {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+
+  .page-title {
+    margin-bottom: 0.7rem;
+    color: $page-title-color;
+  }
+
+  .page-list-date {
+    font-family: monospace;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: $gray-300;
+  }
+}
+
+.post-container {
+  background-color: $post-container-background;
+  margin: 0 1rem;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+
+  .post-content {
+    padding: 1.5rem 2rem 2rem;
+
+    article {
+      border-bottom: 2px solid $article-border;
+      padding-bottom: 1rem;
+    }
+  }
+
+  .post-img {
+    width: 100%;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .post-share {
+    padding: 1rem 0;
+
+    h5 {
+      display: inline-block;
+    }
+
+    a {
+      font-size: 1.1rem;
+      margin-left: 0.4rem;
+    }
+  }
+}

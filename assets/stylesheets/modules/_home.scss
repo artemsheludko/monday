@@ -1,0 +1,93 @@
+.wrapper {
+  max-width: 960px;
+  margin: 0 auto 2rem;
+}
+
+.home {
+  width: 100%;
+}
+
+.page-heading {
+  padding-bottom: 3rem;
+
+  .page-title {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-size: 5rem;
+    line-height: 1.1;
+    text-align: center;
+    color: $page-title-color;
+  }
+}
+
+// About
+.about {
+  margin: 0 1rem;
+  padding: 2rem;
+  background-color: $section-about-background;
+  border-top: 3px solid $border-color;
+  border-bottom: 3px solid $border-color;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+
+  .container-face {
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+
+  .tagline {
+    font-size: 1.1rem;
+    text-align: center;
+    color: $about-tagline-color;
+    letter-spacing: 5px;
+    font-weight: 400;
+    margin: 0 auto 2rem;
+    max-width: 500px;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 120px;
+      height: 2px;
+      margin: auto;
+      margin-top: 0.9rem;
+      background-color: $about-tagline-border;
+    }
+  }
+
+  img.face {
+    border-radius: 50%;
+    width: 200px;
+    max-width: 100%;
+  }
+}
+
+.about-description {
+  margin-bottom: 2rem;
+}
+
+// Contact
+.contact-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    margin-bottom: 0.3rem;
+
+    a {
+      font-family: monospace;
+      text-decoration: none;
+      border-radius: 5px;
+      display: block;
+      color: $contact-list-color;
+      padding: 0.5rem 0.8rem;
+      background-color: $body-background;
+
+      &:hover {
+        opacity: .8;
+        transform: translateX(3px);
+      }
+    }
+  }
+}

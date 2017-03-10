@@ -1,0 +1,54 @@
+.post-box {
+  margin: 0 1rem;
+  padding: 2rem;
+  background-color: $post-box-background;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.post-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  .post-item {
+  position: relative;
+  display: block;
+  padding: 2.5rem 0;
+  border-bottom: 1px solid $post-item-border;
+
+  .post-header {
+
+  .post-link {
+    text-decoration: none;
+    color: $post-link-color;
+    transition: all .3s;
+    &:hover {
+      opacity: .7;
+
+      i.fa-long-arrow-right {
+        transform: translateX(7px);
+        transition: all .2s;
+      }
+    }
+  }
+}
+  }
+}
+.rss-subscribe {
+  color: $rss-subscribe-color;
+  transition: all .3s;
+
+  &:hover {
+    color: $rss-subscribe-hover;
+  }
+}
+
+
+.article-list-footer {
+  font-family: monospace;
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: $article-list-color;
+  opacity: .6;
+}
