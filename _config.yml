@@ -30,6 +30,7 @@ discus-identifier: # Add your Disqus identifier
 
 # Important settings
 assets:
+baseurl: http://artemsheludko/monday/assets
   sources:
     - assets/fonts
     - assets/img
