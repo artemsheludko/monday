@@ -9,7 +9,10 @@
   <link rel="shortcut icon" href="{{ "/assets/img/favicon.ico" | prepend: site.baseurl }}">
   <link href="https://fonts.googleapis.com/css?family=Oswald:400,700|Roboto:400,700" rel="stylesheet">
   <link rel="stylesheet" href="{{ "/assets/fonts/font-awesome/css/font-awesome.min.css" | prepend: site.baseurl }}">
-  <link rel="stylesheet" href="{{site.baseurl}}/assets/{% if site.blog_theme == "light" %}light.css{% else %}dark.css{% endif %}">
 
-
+  {% if site.blog_theme == "light" %}
+    {% stylesheet light %}
+  {% else %}
+    {% stylesheet dark %}
+  {% endif %}
 </head>
