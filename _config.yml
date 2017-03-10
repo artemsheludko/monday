@@ -37,8 +37,11 @@ assets:
     - assets/stylesheets
 
 # Build settings
-# markdown: kramdown
-# theme: minima
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+
 gems:
   - jekyll-feed
   - jekyll-assets
