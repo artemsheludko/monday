@@ -1,4 +1,4 @@
-#The Monday Jekyll theme
+# The Monday Jekyll theme
 =========================
 
 Dark Theme:
