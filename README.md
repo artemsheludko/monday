@@ -25,4 +25,4 @@ Integrations
 
 ## License
 
-MIT License
+GPL-v3.0
